@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../login/lo-home.css";
 import { useNavigate } from "react-router-dom";
 
 function Lo_home() {
   const [name, setname] = useState("");
   const navigation = useNavigate();
+  useEffect(() => {
+    sessionStorage.clear();
+  }, []);
 
   const button = (event) => {
     event.preventDefault();

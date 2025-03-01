@@ -22,6 +22,8 @@ const AfterLogin = () => {
     console.log("Form submitted!");
     navigate("/"); 
   };
+   
+  
 
   return (
     <>
