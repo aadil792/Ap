@@ -1,0 +1,25 @@
+.home-div {
+  background-image: url("../assets/apart-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.button-div {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+.button-div button {
+  color: rgba(228, 223, 223, 0.966);
+  background-color: rgba(0, 0, 0, 0.153);
+  padding: 20px;
+  font-size: large;
+  backdrop-filter: blur(3px);
+  font-family: sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+
+
