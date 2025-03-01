@@ -8,6 +8,7 @@ import Blog_1 from "./pages/blog.jsx";
 import Nav from "./componets/nav.jsx";
 import Footer from "./componets/footer.jsx";
 import Lo_home from "./login/lo-home.jsx";
+import AfterLogin from "./login/after-lo.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact" element={<Contact_1 />} />
         <Route path="/blog" element={<Blog_1 />} />
         <Route path="/login" element={<Lo_home />} />
+        <Route path="/nextlogin" element={<AfterLogin/>}/>
       </Routes>
 
       <Footer />

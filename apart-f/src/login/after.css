@@ -1,0 +1,79 @@
+.after-login {
+    width: 100vw;
+    height: 100vh;
+    background-color: #317b96;
+    
+  }
+  
+  .c1-login {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%); /* Center the div */
+    background-image: url("../assets/back-ap.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px black;
+    width: 70vw;
+    height: 90vh;
+    max-width: 800px;
+  }
+
+  .name-l-d p{ 
+    text-align: center;
+    font-family: cursive;
+    color: aliceblue;
+  }
+
+  .c2-login {
+    background-color: rgba(240, 248, 255, 0.208);
+    width: 30vw;
+    position: absolute;
+    left: 27%;
+    top: 30px;
+    height: 88%;
+    backdrop-filter: blur(3px);
+    justify-items: center;
+    border-radius: 5px;
+  }
+  
+  .lii-login {
+    list-style: none;
+    padding: 10px;
+    width: 20vw;
+    display: flex;
+    gap: 30px;
+    
+  }
+  .hh{
+    position: relative;
+    top: 5px;
+    font-family:cursive;
+  }
+  .lii-login input {
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid black; /* Ensures border is visible */
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.397);
+    color: black;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+  .but-login{
+    display: flex;
+    justify-content: center;
+  }
+  .but-login button{
+   padding: 10px;
+   background-color: #136fa5a7;
+   border: none;
+   box-shadow: 0px 0px 5px black ;
+  
+  }
+  

@@ -9,7 +9,7 @@ import Logo from "../assets/partners.png";
 function Nav() {
 
   const location= useLocation();
-  const showNav=location.pathname !=="/login";
+  const showNav=["/", "/about" ,"/contact", "/blog"].includes(location.pathname);
   if(!showNav) return null;
 
 
