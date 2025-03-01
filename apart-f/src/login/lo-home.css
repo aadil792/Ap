@@ -1,8 +1,7 @@
 .l-div {
   width: 100vw;
   height: 100vh;
-  background-color: #317b96;
-  
+  background: #b19b6da5;
 }
 
 .c1-div {
@@ -39,12 +38,11 @@
   width: 20vw;
   display: flex;
   gap: 30px;
-  
 }
-.hh{
+.hh {
   position: relative;
   top: 5px;
-  font-family:cursive;
+  font-family: cursive;
 }
 .lii-div input {
   outline: none;
@@ -57,15 +55,13 @@
   transition: all 0.3s ease-in-out;
 }
 
-
-.but-d{
+.but-d {
   display: flex;
   justify-content: center;
 }
-.but-d button{
- padding: 10px;
- background-color: #136fa5a7;
- border: none;
- box-shadow: 0px 0px 5px black ;
-
+.but-d button {
+  padding: 10px;
+  background-color: #136fa5a7;
+  border: none;
+  box-shadow: 0px 0px 5px black;
 }

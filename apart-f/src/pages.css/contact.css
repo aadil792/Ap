@@ -4,10 +4,13 @@
     text-align: center;
     background-color:  #317b96;
     padding-top: 65px;  
+    color: #ffffff;
   }
-  
+  .contact-content h1 ,h2{
+    font-family: cursive;
+  }
   .contact-box {
-    background: #f4f4f4;
+    background: #cdc7c7;
     padding: 15px;
     margin: 10px 0;
     border-radius: 10px;
@@ -15,18 +18,26 @@
     display: flex;
     justify-content: center;
     margin-left: 20vw;
+    color: #1c1a1a;
+ 
   }
-  
+  .u{
+    list-style: none;
+  }
+
   .contact-box h3 {
     margin-bottom: 5px;
-    color: #333;
+    color: #1c1a1a;
   }
   
   .social-links a {
     display: inline-block;
     margin: 5px;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
   }
-  
+  .contact-details h3{
+    font-family: sans-serif;
+
+  }
