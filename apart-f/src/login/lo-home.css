@@ -17,7 +17,7 @@
   border-radius: 10px;
   box-shadow: 0px 0px 8px black;
   width: 70vw;
-  height: 90vh;
+  height: 80vh;
   max-width: 800px;
 }
 .c2-div {
@@ -64,4 +64,73 @@
   background-color: #136fa5a7;
   border: none;
   box-shadow: 0px 0px 5px black;
+}
+
+/* 🔹 Tablets (width ≤ 768px) */
+@media (max-width: 768px) {
+  .c1-div {
+    width: 85vw;
+    height: 80vh;
+  }
+
+  .c2-div {
+    width: 45vw;
+    height: 55vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .lii-div {
+    width: 90%;
+    gap: 20px;
+  }
+
+  .lii-div input {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .hh {
+    font-size: 1.4rem;
+  }
+
+  .but-d button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+/* 🔹 Mobile Devices (width ≤ 480px) */
+@media (max-width: 480px) {
+  .c1-div {
+    width: 95vw;
+    height: auto;
+    padding: 15px;
+  }
+
+  .c2-div {
+    width: 75vw;
+    height: auto;
+    padding: 15px;
+  }
+
+  .lii-div {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .lii-div input {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .hh {
+    font-size: 1.2rem;
+  }
+
+  .but-d button {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
 }

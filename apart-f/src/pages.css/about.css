@@ -1,46 +1,56 @@
 * {
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* About Content Section */
 .about-content {
-  padding-top: 70px;
+  padding: 5% 10%;
   text-align: center;
   background-color: #317b96;
   color: rgb(130, 116, 116);
   width: 100%;
 }
 
-h1,
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #221a1a;
+}
+
 h2 {
   color: #221a1a;
 }
 
-h1 {
-  text-align: center;
-  font-size: 2.5rem;
-}
-
 .about-content p {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   color: #dfdddd;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+/* Features Section */
 .features {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;  /* Ensures it adjusts on smaller screens */
   margin-top: 20px;
 }
 
 .feature-box {
-  width: 48%;
+  width: 48%; /* Maintains ratio on larger screens */
   background: #255a72;
   padding: 15px;
   border-radius: 8px;
   color: #f8f8f8;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
+/* Typography */
 h3 {
   color: #0a0909;
   font-family: cursive;
@@ -56,6 +66,7 @@ h3 {
   list-style: none;
 }
 
+/* Closing Section */
 .closing {
   margin-top: 20px;
   font-weight: bold;
@@ -63,10 +74,47 @@ h3 {
   color: #000000;
 }
 
+/* Heading Box */
 .heading {
   background-color: #fff;
   padding: 10px 24px;
   border-radius: 5px;
   margin: 10px auto;
   width: fit-content;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-box {
+    width: 90%; /* Makes it take full width on smaller screens */
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
+  }
+
+  .feature-box {
+    width: 100%;
+    padding: 10px;
+  }
 }

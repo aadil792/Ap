@@ -17,7 +17,7 @@
   border-radius: 10px;
   box-shadow: 0px 0px 8px black;
   width: 70vw;
-  height: 90vh;
+  height: 85vh;
   max-width: 800px;
 }
 
@@ -71,4 +71,72 @@
   background-color: #136fa5a7;
   border: none;
   box-shadow: 0px 0px 5px black;
+}
+/* 🔹 Tablets (width ≤ 768px) */
+@media (max-width: 768px) {
+  .c1-login {
+    width: 85vw;
+    height: 90vh;
+  }
+
+  .c2-login {
+    width: 45vw;
+    height: 55vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .lii-login {
+    width: 90%;
+    gap: 20px;
+  }
+
+  .lii-login input {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .hh {
+    font-size: 1.4rem;
+  }
+
+  .but-login button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+/* 🔹 Mobile Devices (width ≤ 480px) */
+@media (max-width: 480px) {
+  .c1-login {
+    width: 95vw;
+    height: auto;
+    padding: 15px;
+  }
+
+  .c2-login {
+    width: 75vw;
+    height: auto;
+    padding: 15px;
+  }
+
+  .lii-login {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .lii-login input {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .hh {
+    font-size: 1.2rem;
+  }
+
+  .but-login button {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
 }

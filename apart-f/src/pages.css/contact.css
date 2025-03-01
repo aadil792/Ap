@@ -1,43 +1,80 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Contact Content */
 .contact-content {
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    background-color:  #317b96;
-    padding-top: 65px;  
-    color: #ffffff;
-  }
-  .contact-content h1 ,h2{
-    font-family: cursive;
-  }
+  margin: auto;
+  padding: 5% 10%;
+  text-align: center;
+  background-color: #317b96;
+  color: #ffffff;
+}
+
+.contact-content h1, h2 {
+  font-family: cursive;
+}
+
+/* Contact Box */
+.contact-box {
+  background: #cdc7c7;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1c1a1a;
+}
+
+/* Remove default list styles */
+.u {
+  list-style: none;
+  padding: 0;
+}
+
+/* Contact Box Headings */
+.contact-box h3,
+.contact-details h3 {
+  margin-bottom: 5px;
+  color: #1c1a1a;
+  font-family: sans-serif;
+}
+
+/* Social Links */
+.social-links a {
+  display: inline-block;
+  margin: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .contact-box {
-    background: #cdc7c7;
+    width: 80%;
     padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
-    width: 60vw;
-    display: flex;
-    justify-content: center;
-    margin-left: 20vw;
-    color: #1c1a1a;
- 
-  }
-  .u{
-    list-style: none;
+    flex-direction: column;
+    text-align: center;
   }
 
-  .contact-box h3 {
-    margin-bottom: 5px;
-    color: #1c1a1a;
+  .contact-content h1 {
+    font-size: 2rem;
   }
-  
-  .social-links a {
-    display: inline-block;
-    margin: 5px;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-  }
-  .contact-details h3{
-    font-family: sans-serif;
+}
 
+@media (max-width: 480px) {
+  .contact-box {
+    width: 90%;
+    padding: 10px;
   }
+
+  .contact-content h1 {
+    font-size: 1.8rem;
+  }
+}

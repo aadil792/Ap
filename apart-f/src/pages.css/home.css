@@ -1,25 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background Image Section */
 .home-div {
   background-image: url("../assets/apart-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* Button Container */
 .button-div {
-  position: absolute;
-  top: 50%;
-  left: 45%;
+  text-align: center;
 }
+
+/* Button Styling */
 .button-div button {
   color: rgba(228, 223, 223, 0.966);
-  background-color: rgba(0, 0, 0, 0.153);
-  padding: 20px;
-  font-size: large;
-  backdrop-filter: blur(3px);
-  font-family: sans-serif;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px 25px;
+  font-size: 1.2rem;
   border: none;
   cursor: pointer;
+  font-family: sans-serif;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
 }
 
+/* Hover Effect */
+.button-div button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
+}
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .button-div {
+    position: static;
+    margin-top: 50vh;
+  }
 
+  .button-div button {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-div button {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+}

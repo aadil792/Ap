@@ -23,7 +23,8 @@ function Nav() {
             <p className="p"> Seamless Community Interaction and Management </p>
           </div>
         </div>
-        <ul className="ui">
+        <div className="u-div">
+        <ul className="ui-di">
           <li className="li-di">
             <Link to="/" className="link" element={<Home_1 />}>
               Home
@@ -48,6 +49,7 @@ function Nav() {
             </Link>
           </li>
         </ul>
+        </div>
       </div>
     </div>
   );
